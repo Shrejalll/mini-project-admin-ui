@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 15px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 5px;
+    }
+
+    th {
+      font-weight: bold;
+      background-color: #f1f1f1;
+    }
+
+    .selected {
+      background-color: #eee;
+    }
+
+    #search-bar {
+      margin-bottom: 10px;
+    }
+
+    #pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    #pagination button {
+      margin: 0 5px;
+      padding: 5px 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #delete-selected {
+      margin-left: 10px;
+      background-color: #f00;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+  <div id="search-bar">
+    <input type="text" placeholder="Search..." id="search-input">
+    <button class="search-icon">🔍</button>
+  </div>
+  <table id="users-table">
+    <thead>
+      <tr>
+        <th><input type="checkbox" id="select-all"></th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <div id="pagination"></div>
+  <button id="delete-selected">Delete Selected</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
