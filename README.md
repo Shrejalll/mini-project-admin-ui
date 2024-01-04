@@ -24,4 +24,6 @@ To get started with the Admin UI Mini Project, simply open the `index.html` file
   
 Link:- https://admin-ui-shrejalll.netlify.app
 
+![Screenshot (49)](https://github.com/Shrejalll/mini-project-admin-ui/assets/139336892/6f027ecb-a734-4893-8959-ec4b04db8198)
+
 
